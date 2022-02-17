@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 
-public class Test1_Product_Filter_isnew_true {
+public class Test4_Product_Filter_isnew_true {
 
 
     @Test

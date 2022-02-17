@@ -1,23 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="3" ignored="0" total="6" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default Suite" duration-ms="7428" started-at="2022-02-17T10:58:41 IST" finished-at="2022-02-17T10:58:48 IST">
+  <suite name="Default Suite" duration-ms="19438" started-at="2022-02-17T14:28:13 IST" finished-at="2022-02-17T14:28:32 IST">
     <groups>
     </groups>
-    <test name="api-testing" duration-ms="7428" started-at="2022-02-17T10:58:41 IST" finished-at="2022-02-17T10:58:48 IST">
-      <class name="BAPICodeChallenge.Test1_Product_Filter_isnew_true">
-        <test-method status="PASS" signature="CompareProductVsFilterCount()[pri:0, instance:BAPICodeChallenge.Test1_Product_Filter_isnew_true@6500df86]" name="CompareProductVsFilterCount" duration-ms="5356" started-at="2022-02-17T10:58:41 IST" finished-at="2022-02-17T10:58:46 IST">
+    <test name="api-testing" duration-ms="19438" started-at="2022-02-17T14:28:13 IST" finished-at="2022-02-17T14:28:32 IST">
+      <class name="BAPICodeChallenge.Test7_Product_Filter_brand_1127_NotOnSale">
+        <test-method status="PASS" signature="CompareProductVsFilterCount()[pri:0, instance:BAPICodeChallenge.Test7_Product_Filter_brand_1127_NotOnSale@6e06451e]" name="CompareProductVsFilterCount" duration-ms="1874" started-at="2022-02-17T14:28:26 IST" finished-at="2022-02-17T14:28:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CompareProductVsFilterCount -->
-      </class> <!-- BAPICodeChallenge.Test1_Product_Filter_isnew_true -->
-      <class name="BAPICodeChallenge.Test2_Product_Filter_isnew_false">
-        <test-method status="PASS" signature="CompareProductVsFilterCount()[pri:0, instance:BAPICodeChallenge.Test2_Product_Filter_isnew_false@5f2108b5]" name="CompareProductVsFilterCount" duration-ms="2024" started-at="2022-02-17T10:58:46 IST" finished-at="2022-02-17T10:58:48 IST">
+      </class> <!-- BAPICodeChallenge.Test7_Product_Filter_brand_1127_NotOnSale -->
+      <class name="BAPICodeChallenge.Test2_Product_Filter_color_38934">
+        <test-method status="PASS" signature="CompareProductVsFilterCount()[pri:0, instance:BAPICodeChallenge.Test2_Product_Filter_color_38934@3fee9989]" name="CompareProductVsFilterCount" duration-ms="5908" started-at="2022-02-17T14:28:13 IST" finished-at="2022-02-17T14:28:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CompareProductVsFilterCount -->
-      </class> <!-- BAPICodeChallenge.Test2_Product_Filter_isnew_false -->
+      </class> <!-- BAPICodeChallenge.Test2_Product_Filter_color_38934 -->
+      <class name="BAPICodeChallenge.Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice">
+        <test-method status="FAIL" signature="CompareProductVsFilterCount()[pri:0, instance:BAPICodeChallenge.Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice@59494225]" name="CompareProductVsFilterCount" duration-ms="3885" started-at="2022-02-17T14:28:28 IST" finished-at="2022-02-17T14:28:32 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Count not matching between Products and Filter API expected [930757] but found [930758]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Count not matching between Products and Filter API expected [930757] but found [930758]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at BAPICodeChallenge.Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice.CompareProductVsFilterCount(Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CompareProductVsFilterCount -->
+      </class> <!-- BAPICodeChallenge.Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice -->
+      <class name="BAPICodeChallenge.Test5_Product_Filter_isnew_false">
+        <test-method status="FAIL" signature="CompareProductVsFilterCount()[pri:0, instance:BAPICodeChallenge.Test5_Product_Filter_isnew_false@27c20538]" name="CompareProductVsFilterCount" duration-ms="1891" started-at="2022-02-17T14:28:22 IST" finished-at="2022-02-17T14:28:24 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Count not matching between Products and Filter API expected [872072] but found [872070]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Count not matching between Products and Filter API expected [872072] but found [872070]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at BAPICodeChallenge.Test5_Product_Filter_isnew_false.CompareProductVsFilterCount(Test5_Product_Filter_isnew_false.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CompareProductVsFilterCount -->
+      </class> <!-- BAPICodeChallenge.Test5_Product_Filter_isnew_false -->
+      <class name="BAPICodeChallenge.Test6_Product_Filter_brand_1127_OnSale">
+        <test-method status="PASS" signature="CompareProductVsFilterCount()[pri:0, instance:BAPICodeChallenge.Test6_Product_Filter_brand_1127_OnSale@72d818d1]" name="CompareProductVsFilterCount" duration-ms="2810" started-at="2022-02-17T14:28:24 IST" finished-at="2022-02-17T14:28:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CompareProductVsFilterCount -->
+      </class> <!-- BAPICodeChallenge.Test6_Product_Filter_brand_1127_OnSale -->
+      <class name="BAPICodeChallenge.Test4_Product_Filter_isnew_true">
+        <test-method status="FAIL" signature="CompareProductVsFilterCount()[pri:0, instance:BAPICodeChallenge.Test4_Product_Filter_isnew_true@56ac3a89]" name="CompareProductVsFilterCount" duration-ms="3023" started-at="2022-02-17T14:28:19 IST" finished-at="2022-02-17T14:28:22 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Count not matching between Products and Filter API expected [76612] but found [76611]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Count not matching between Products and Filter API expected [76612] but found [76611]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at BAPICodeChallenge.Test4_Product_Filter_isnew_true.CompareProductVsFilterCount(Test4_Product_Filter_isnew_true.java:41)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CompareProductVsFilterCount -->
+      </class> <!-- BAPICodeChallenge.Test4_Product_Filter_isnew_true -->
     </test> <!-- api-testing -->
   </suite> <!-- Default Suite -->
 </testng-results>

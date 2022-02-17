@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_Suite">
-              <span class="suite-name border-passed">Default Suite</span>
+              <span class="suite-name border-failed">Default Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods failed suite-Default_Suite"> (hide)</a> <!-- hide-methods failed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods failed suite-Default_Suite"> (show)</a> <!-- show-methods failed suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="BAPICodeChallenge.Test4_Product_Filter_isnew_true" hash-for-method="CompareProductVsFilterCount">CompareProductVsFilterCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="BAPICodeChallenge.Test5_Product_Filter_isnew_false" hash-for-method="CompareProductVsFilterCount">CompareProductVsFilterCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="BAPICodeChallenge.Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice" hash-for-method="CompareProductVsFilterCount">CompareProductVsFilterCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +128,17 @@
                     <div class="method-list-content passed suite-Default_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="BAPICodeChallenge.Test2_Product_Filter_isnew_false" hash-for-method="CompareProductVsFilterCount">CompareProductVsFilterCount</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="BAPICodeChallenge.Test6_Product_Filter_brand_1127_OnSale" hash-for-method="CompareProductVsFilterCount">CompareProductVsFilterCount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="BAPICodeChallenge.Test1_Product_Filter_isnew_true" hash-for-method="CompareProductVsFilterCount">CompareProductVsFilterCount</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="BAPICodeChallenge.Test2_Product_Filter_color_38934" hash-for-method="CompareProductVsFilterCount">CompareProductVsFilterCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_Suite" title="BAPICodeChallenge.Test7_Product_Filter_brand_1127_NotOnSale" hash-for-method="CompareProductVsFilterCount">CompareProductVsFilterCount</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_Suite -->
@@ -124,10 +153,76 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_Suite" class="panel Default_Suite">
+          <div class="suite-Default_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">BAPICodeChallenge.Test4_Product_Filter_isnew_true</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CompareProductVsFilterCount">
+                  </a> <!-- CompareProductVsFilterCount -->
+                  <span class="method-name">CompareProductVsFilterCount</span>
+                  <div class="stack-trace">java.lang.AssertionError: Count not matching between Products and Filter API expected [76612] but found [76611]
+	at BAPICodeChallenge.Test4_Product_Filter_isnew_true.CompareProductVsFilterCount(Test4_Product_Filter_isnew_true.java:41)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-failed -->
+          <div class="suite-Default_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">BAPICodeChallenge.Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CompareProductVsFilterCount">
+                  </a> <!-- CompareProductVsFilterCount -->
+                  <span class="method-name">CompareProductVsFilterCount</span>
+                  <div class="stack-trace">java.lang.AssertionError: Count not matching between Products and Filter API expected [930757] but found [930758]
+	at BAPICodeChallenge.Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice.CompareProductVsFilterCount(Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice.java:50)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-failed -->
+          <div class="suite-Default_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">BAPICodeChallenge.Test5_Product_Filter_isnew_false</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CompareProductVsFilterCount">
+                  </a> <!-- CompareProductVsFilterCount -->
+                  <span class="method-name">CompareProductVsFilterCount</span>
+                  <div class="stack-trace">java.lang.AssertionError: Count not matching between Products and Filter API expected [872072] but found [872070]
+	at BAPICodeChallenge.Test5_Product_Filter_isnew_false.CompareProductVsFilterCount(Test5_Product_Filter_isnew_false.java:43)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-failed -->
           <div class="suite-Default_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">BAPICodeChallenge.Test1_Product_Filter_isnew_true</span>
+              <span class="class-name">BAPICodeChallenge.Test7_Product_Filter_brand_1127_NotOnSale</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -142,7 +237,22 @@
           <div class="suite-Default_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">BAPICodeChallenge.Test2_Product_Filter_isnew_false</span>
+              <span class="class-name">BAPICodeChallenge.Test2_Product_Filter_color_38934</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CompareProductVsFilterCount">
+                  </a> <!-- CompareProductVsFilterCount -->
+                  <span class="method-name">CompareProductVsFilterCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-passed -->
+          <div class="suite-Default_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BAPICodeChallenge.Test6_Product_Filter_brand_1127_OnSale</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -166,8 +276,12 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;api-testing&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;BAPICodeChallenge.Test1_Product_Filter_isnew_true&quot;/&gt;
-      &lt;class name=&quot;BAPICodeChallenge.Test2_Product_Filter_isnew_false&quot;/&gt;
+      &lt;class name=&quot;BAPICodeChallenge.Test2_Product_Filter_color_38934&quot;/&gt;
+      &lt;class name=&quot;BAPICodeChallenge.Test4_Product_Filter_isnew_true&quot;/&gt;
+      &lt;class name=&quot;BAPICodeChallenge.Test5_Product_Filter_isnew_false&quot;/&gt;
+      &lt;class name=&quot;BAPICodeChallenge.Test6_Product_Filter_brand_1127_OnSale&quot;/&gt;
+      &lt;class name=&quot;BAPICodeChallenge.Test7_Product_Filter_brand_1127_NotOnSale&quot;/&gt;
+      &lt;class name=&quot;BAPICodeChallenge.Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- api-testing --&gt;
 &lt;/suite&gt; &lt;!-- Default Suite --&gt;
@@ -181,7 +295,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">api-testing (2 classes)</span>
+                <span class="test-name">api-testing (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -207,20 +321,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'CompareProductVsFilterCount')
-data.setCell(0, 2, 'BAPICodeChallenge.Test1_Product_Filter_isnew_true')
-data.setCell(0, 3, 5356);
+data.setCell(0, 2, 'BAPICodeChallenge.Test2_Product_Filter_color_38934')
+data.setCell(0, 3, 5908);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'CompareProductVsFilterCount')
-data.setCell(1, 2, 'BAPICodeChallenge.Test2_Product_Filter_isnew_false')
-data.setCell(1, 3, 2024);
+data.setCell(1, 2, 'BAPICodeChallenge.Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice')
+data.setCell(1, 3, 3885);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CompareProductVsFilterCount')
+data.setCell(2, 2, 'BAPICodeChallenge.Test4_Product_Filter_isnew_true')
+data.setCell(2, 3, 3023);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'CompareProductVsFilterCount')
+data.setCell(3, 2, 'BAPICodeChallenge.Test6_Product_Filter_brand_1127_OnSale')
+data.setCell(3, 3, 2810);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'CompareProductVsFilterCount')
+data.setCell(4, 2, 'BAPICodeChallenge.Test5_Product_Filter_isnew_false')
+data.setCell(4, 3, 1891);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'CompareProductVsFilterCount')
+data.setCell(5, 2, 'BAPICodeChallenge.Test7_Product_Filter_brand_1127_NotOnSale')
+data.setCell(5, 3, 1874);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -246,17 +376,51 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">BAPICodeChallenge.Test1_Product_Filter_isnew_true</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">BAPICodeChallenge.Test2_Product_Filter_color_38934</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CompareProductVsFilterCount</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">BAPICodeChallenge.Test2_Product_Filter_isnew_false</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">BAPICodeChallenge.Test4_Product_Filter_isnew_true</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CompareProductVsFilterCount</span>
+                <span class="method-start">5908 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BAPICodeChallenge.Test5_Product_Filter_isnew_false</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CompareProductVsFilterCount</span>
+                <span class="method-start">8947 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BAPICodeChallenge.Test6_Product_Filter_brand_1127_OnSale</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">CompareProductVsFilterCount</span>
-                <span class="method-start">5356 ms</span>
+                <span class="method-start">10838 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BAPICodeChallenge.Test7_Product_Filter_brand_1127_NotOnSale</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CompareProductVsFilterCount</span>
+                <span class="method-start">13648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BAPICodeChallenge.Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CompareProductVsFilterCount</span>
+                <span class="method-start">15522 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -3,11 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
   <test thread-count="5" name="api-testing(failed)">
     <classes>
-      <class name="BAPICodeChallenge.Test2_Product_Filter_isnew_false">
+      <class name="BAPICodeChallenge.Test4_Product_Filter_isnew_true">
         <methods>
           <include name="CompareProductVsFilterCount"/>
         </methods>
-      </class> <!-- BAPICodeChallenge.Test2_Product_Filter_isnew_false -->
+      </class> <!-- BAPICodeChallenge.Test4_Product_Filter_isnew_true -->
+      <class name="BAPICodeChallenge.Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice">
+        <methods>
+          <include name="CompareProductVsFilterCount"/>
+        </methods>
+      </class> <!-- BAPICodeChallenge.Test8_Product_Filter_category_236147_ProductCount_check_MinMaxPrice -->
+      <class name="BAPICodeChallenge.Test5_Product_Filter_isnew_false">
+        <methods>
+          <include name="CompareProductVsFilterCount"/>
+        </methods>
+      </class> <!-- BAPICodeChallenge.Test5_Product_Filter_isnew_false -->
     </classes>
   </test> <!-- api-testing(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

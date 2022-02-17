@@ -90,8 +90,7 @@ https://api-cloud.aboutyou.de/v1/products?filters[minPrice]=195&filters[maxPrice
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-9. Hit the filters endpoint with category which is invalid like - 1111000000. Now hit the products endpoint with that category and see that we are getting null response.
-
+9. Hit the filters endpoint with category which is invalid like - 1111000000 and see that we are getting null response. Now hit the products endpoint with that category as given in filters endpoint. Verify the response. Total should be 0.
 Filters:
 https://api-cloud.aboutyou.de/v1/filters/prices/values?filters[category]=1111000000
 

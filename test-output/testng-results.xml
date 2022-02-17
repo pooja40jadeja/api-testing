@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="7428" started-at="2022-02-17T10:58:41 IST" finished-at="2022-02-17T10:58:48 IST">
+    <groups>
+    </groups>
+    <test name="api-testing" duration-ms="7428" started-at="2022-02-17T10:58:41 IST" finished-at="2022-02-17T10:58:48 IST">
+      <class name="BAPICodeChallenge.Test1_Product_Filter_isnew_true">
+        <test-method status="PASS" signature="CompareProductVsFilterCount()[pri:0, instance:BAPICodeChallenge.Test1_Product_Filter_isnew_true@6500df86]" name="CompareProductVsFilterCount" duration-ms="5356" started-at="2022-02-17T10:58:41 IST" finished-at="2022-02-17T10:58:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CompareProductVsFilterCount -->
+      </class> <!-- BAPICodeChallenge.Test1_Product_Filter_isnew_true -->
+      <class name="BAPICodeChallenge.Test2_Product_Filter_isnew_false">
+        <test-method status="PASS" signature="CompareProductVsFilterCount()[pri:0, instance:BAPICodeChallenge.Test2_Product_Filter_isnew_false@5f2108b5]" name="CompareProductVsFilterCount" duration-ms="2024" started-at="2022-02-17T10:58:46 IST" finished-at="2022-02-17T10:58:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CompareProductVsFilterCount -->
+      </class> <!-- BAPICodeChallenge.Test2_Product_Filter_isnew_false -->
+    </test> <!-- api-testing -->
+  </suite> <!-- Default Suite -->
+</testng-results>
